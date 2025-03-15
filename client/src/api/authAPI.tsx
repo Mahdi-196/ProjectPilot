@@ -1,9 +1,11 @@
 // client/src/api/authAPI.tsx
 import { UserLogin } from "../interfaces/UserLogin";
 
+const API_BASE_URL = "https://projectpilot-15.onrender.com"; // Deployed backend URL
+
 const login = async (userInfo: UserLogin): Promise<string> => {
   try {
-    const response = await fetch('http://localhost:3006/auth/login', {
+    const response = await fetch(`${API_BASE_URL}/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userInfo),
