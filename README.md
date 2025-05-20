@@ -78,9 +78,11 @@ The application is deployed using Render:
 - **CORS Errors:** Installed `@types/cors` and configured CORS in Express.
 - **Database Connection:** Verified `DATABASE_URL` in `.env` matches the Render database settings.
 
+## seeded users 
 
-## INFO
-[Mahdi-196](https://github.com/Mahdi-196)
+    { username: 'JollyGuru', password: 'password' },
+    { username: 'SunnyScribe', password: 'password' },
+    { username: 'RadiantComet', password: 'password' },
 
 ## License
 This project is licensed under the MIT License.
